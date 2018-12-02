@@ -17,11 +17,15 @@ cd security_information_systems
 ```shell
 vagrant up
 ```
+If during the build the message **"default: A newer version of the box 'ubuntu/xenial64' is available! You currently"** is diplayed, you will need to run this command.
+```shell
+vagrant box update
+```
 At this point it is necessary to wait because last instruction was to make a reboot in order to update all changes. This delay is approximately one minute after a successful build.
 
 #### Accessing to vagrant box
 ```shell
-vagrant shh
+vagrant ssh
 ```
 If connexion is refused, it is because the box is still rebooting, wait some time and retry.
 
